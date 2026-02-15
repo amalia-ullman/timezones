@@ -16,3 +16,7 @@ how many minutes in a mile?
 - minutes per distance unit found by dividing sixty minutes by the distance of the western and eastern most points in the chunk
 - multiply the minutes per distance by the distance offset to get the minute offset
 - either add or subtract the minute offset from the current time to get the scaled time at that location
+
+
+
+taylor series to get border lines
