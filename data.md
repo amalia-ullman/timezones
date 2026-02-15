@@ -14,7 +14,7 @@ eastern-most point: Utah Border, NV
 41°43′08″N 114°02′22″W
 Decimal: 41.718889, 114.039444
 
-western-most point:Bodelteh Islands
+western-most point: Bodelteh Islands
 48°10′42″N 124°46′18″W
 Decimal: 48.178333, 124.771667
 

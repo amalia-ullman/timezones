@@ -1,0 +1,148 @@
+{
+    "locations": [
+        {
+            "state": "WA",
+            "timezone": "Pacific Time",
+            "cardinal-extremity": "north",
+            "coordinates": {
+                "latitude": "49.0025",
+                "longiutde": "122.201667"
+            }
+        },
+        {
+            "state": "CA",
+            "timezone": "Pacific Time",
+            "cardinal-extremity": "south",
+            "coordinates": {
+                "latitude": "32.534444",
+                "longiutde": "117.123889"
+            }
+        },
+        {
+            "state": "NV",
+            "timezone": "Pacific Time",
+            "cardinal-extremity": "east",
+            "coordinates": {
+                "latitude": "41.718889",
+                "longiutde": "114.039444"
+            }
+        },
+        {
+            "state": "WA",
+            "timezone": "Pacific Time",
+            "cardinal-extremity": "west",
+            "coordinates": {
+                "latitude": "48.178333",
+                "longiutde": "124.771667"
+            }
+        },
+        {
+            "state": "MT",
+            "timezone": "Mountain Time",
+            "cardinal-extremity": "north",
+            "coordinates": {
+                "latitude": "49.001111",
+                "longiutde": "114.388611"
+            }
+        },
+        {
+            "state": "NM",
+            "timezone": "Mountain Time",
+            "cardinal-extremity": "south",
+            "coordinates": {
+                "latitude": "31.332167",
+                "longiutde": "108.756389"
+            }
+        },
+        {
+            "state": "CO",
+            "timezone": "Mountain Time",
+            "cardinal-extremity": "east",
+            "coordinates": {
+                "latitude": "37.375",
+                "longiutde": "102.041667"
+            }
+        },
+        {
+            "state": "ID",
+            "timezone": "Mountain Time",
+            "cardinal-extremity": "west",
+            "coordinates": {
+                "latitude": "44.391111",
+                "longiutde": "117.243056"
+            }
+        },
+        {
+            "state": "MN",
+            "timezone": "Central Time",
+            "cardinal-extremity": "north",
+            "coordinates": {
+                "latitude": "49.384444",
+                "longiutde": "95.153333"
+            }
+        },
+        {
+            "state": "TX",
+            "timezone": "Central Time",
+            "cardinal-extremity": "south",
+            "coordinates": {
+                "latitude": "25.837222",
+                "longiutde": "97.394167"
+            }
+        },
+        {
+            "state": "AL",
+            "timezone": "Central Time",
+            "cardinal-extremity": "east",
+            "coordinates": {
+                "latitude": "32.259722",
+                "longiutde": "84.889167"
+            }
+        },
+        {
+            "state": "TX",
+            "timezone": "Central Time",
+            "cardinal-extremity": "west",
+            "coordinates": {
+                "latitude": "31.895556",
+                "longiutde": "106.645556"
+            }
+        },
+        {
+            "state": "ME",
+            "timezone": "Eastern Time",
+            "cardinal-extremity": "north",
+            "coordinates": {
+                "latitude": "47.459722",
+                "longiutde": "69.224444"
+            }
+        },
+        {
+            "state": "FL",
+            "timezone": "Eastern Time",
+            "cardinal-extremity": "south",
+            "coordinates": {
+                "latitude": "24.521111",
+                "longiutde": "81.963611"
+            }
+        },
+        {
+            "state": "ME",
+            "timezone": "Eastern Time",
+            "cardinal-extremity": "east",
+            "coordinates": {
+                "latitude": "44.812222",
+                "longiutde": "66.945278"
+            }
+        },
+        {
+            "state": "IN",
+            "timezone": "Eastern Time",
+            "cardinal-extremity": "west",
+            "coordinates": {
+                "latitude": "37.901667",
+                "longiutde": "88.097778"
+            }
+        }
+    ]
+}
