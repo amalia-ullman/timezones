@@ -1,6 +1,8 @@
+base_url = "/timezones";
+
 async function getTimezoneData() {
     const requestURL =
-        "data.json";
+        `${base_url}/data.json`;
     const request = new Request(requestURL);
 
     const response = await fetch(request);
