@@ -1,0 +1,24 @@
+{
+    "distances": [
+        {
+            "timezone": "pacific",
+            "vertical (miles)": 1137.0685451875,
+            "horizontal (miles)": 494.1
+        },
+        {
+            "timezone": "mountain",
+            "vertical (miles)": 1219.9861628525,
+            "horizontal (miles)": 749.5
+        },
+        {
+            "timezone": "central",
+            "vertical (miles)": 1625.8631536562,
+            "horizontal (miles)": 1274
+        },
+        {
+            "timezone": "eastern",
+            "vertical (miles)": 1583.8404386281,
+            "horizontal (miles)": 1150.7
+        }
+    ]
+}
