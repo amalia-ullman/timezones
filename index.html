@@ -31,6 +31,20 @@
     <h3>look! we have a map! look again! we have some json objects! this site is under construction, but one day you
         will find the theoretical "true" time of different points based on the distance covered in each timezone.</h3>
     <pre id="pre"></pre>
+    <div style="margin-block: 2rem;">
+        <label for="steps">Steps</label>
+        <div style="display: flex; gap: 1rem">
+            <input type="range" id="steps" name="steps" min="1" max="5" />
+            <span id="steps-value" style="font-family:monospace;"> 1</span>
+        </div>
+        <script>
+            let stepsSlider = document.getElementById('steps');
+            let stepsLabel = document.getElementById('steps-value');
+            stepsSlider.addEventListener('change', function (e) {
+                stepsLabel.innerText = stepsSlider.value;
+            })
+        </script>
+    </div>
     <div id="map"></div>
     <script src="app.js"></script>
 
