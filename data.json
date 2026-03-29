@@ -6,7 +6,7 @@
             "cardinal-extremity": "north",
             "coordinates": {
                 "latitude": "49.0025",
-                "longiutde": "-122.201667"
+                "longitude": "-122.201667"
             }
         },
         {
@@ -15,7 +15,7 @@
             "cardinal-extremity": "south",
             "coordinates": {
                 "latitude": "32.534444",
-                "longiutde": "-117.123889"
+                "longitude": "-117.123889"
             }
         },
         {
@@ -24,7 +24,7 @@
             "cardinal-extremity": "east",
             "coordinates": {
                 "latitude": "41.718889",
-                "longiutde": "-114.039444"
+                "longitude": "-114.039444"
             }
         },
         {
@@ -33,7 +33,7 @@
             "cardinal-extremity": "west",
             "coordinates": {
                 "latitude": "48.178333",
-                "longiutde": "-124.771667"
+                "longitude": "-124.771667"
             }
         },
         {
@@ -42,7 +42,7 @@
             "cardinal-extremity": "north",
             "coordinates": {
                 "latitude": "49.001111",
-                "longiutde": "-114.388611"
+                "longitude": "-114.388611"
             }
         },
         {
@@ -51,7 +51,7 @@
             "cardinal-extremity": "south",
             "coordinates": {
                 "latitude": "31.332167",
-                "longiutde": "-108.756389"
+                "longitude": "-108.756389"
             }
         },
         {
@@ -60,7 +60,7 @@
             "cardinal-extremity": "east",
             "coordinates": {
                 "latitude": "37.375",
-                "longiutde": "-102.041667"
+                "longitude": "-102.041667"
             }
         },
         {
@@ -69,7 +69,7 @@
             "cardinal-extremity": "west",
             "coordinates": {
                 "latitude": "44.391111",
-                "longiutde": "-117.243056"
+                "longitude": "-117.243056"
             }
         },
         {
@@ -78,7 +78,7 @@
             "cardinal-extremity": "north",
             "coordinates": {
                 "latitude": "49.384444",
-                "longiutde": "-95.153333"
+                "longitude": "-95.153333"
             }
         },
         {
@@ -87,7 +87,7 @@
             "cardinal-extremity": "south",
             "coordinates": {
                 "latitude": "25.837222",
-                "longiutde": "-97.394167"
+                "longitude": "-97.394167"
             }
         },
         {
@@ -96,7 +96,7 @@
             "cardinal-extremity": "east",
             "coordinates": {
                 "latitude": "32.259722",
-                "longiutde": "-84.889167"
+                "longitude": "-84.889167"
             }
         },
         {
@@ -105,7 +105,7 @@
             "cardinal-extremity": "west",
             "coordinates": {
                 "latitude": "31.895556",
-                "longiutde": "-106.645556"
+                "longitude": "-106.645556"
             }
         },
         {
@@ -114,7 +114,7 @@
             "cardinal-extremity": "north",
             "coordinates": {
                 "latitude": "47.459722",
-                "longiutde": "-69.224444"
+                "longitude": "-69.224444"
             }
         },
         {
@@ -123,7 +123,7 @@
             "cardinal-extremity": "south",
             "coordinates": {
                 "latitude": "24.521111",
-                "longiutde": "-81.963611"
+                "longitude": "-81.963611"
             }
         },
         {
@@ -132,7 +132,7 @@
             "cardinal-extremity": "east",
             "coordinates": {
                 "latitude": "44.812222",
-                "longiutde": "-66.945278"
+                "longitude": "-66.945278"
             }
         },
         {
@@ -141,7 +141,7 @@
             "cardinal-extremity": "west",
             "coordinates": {
                 "latitude": "37.901667",
-                "longiutde": "-88.097778"
+                "longitude": "-88.097778"
             }
         }
     ]
