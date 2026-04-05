@@ -5,8 +5,8 @@
             "timezone": "Pacific Time",
             "cardinal-extremity": "north",
             "coordinates": {
-                "latitude": "49.0025",
-                "longitude": "-122.201667"
+                "latitude": 49.0025,
+                "longitude": -122.201667
             }
         },
         {
@@ -14,8 +14,8 @@
             "timezone": "Pacific Time",
             "cardinal-extremity": "south",
             "coordinates": {
-                "latitude": "32.534444",
-                "longitude": "-117.123889"
+                "latitude": 32.534444,
+                "longitude": -117.123889
             }
         },
         {
@@ -23,8 +23,8 @@
             "timezone": "Pacific Time",
             "cardinal-extremity": "east",
             "coordinates": {
-                "latitude": "41.718889",
-                "longitude": "-114.039444"
+                "latitude": 41.718889,
+                "longitude": -114.039444
             }
         },
         {
@@ -32,8 +32,8 @@
             "timezone": "Pacific Time",
             "cardinal-extremity": "west",
             "coordinates": {
-                "latitude": "48.178333",
-                "longitude": "-124.771667"
+                "latitude": 48.178333,
+                "longitude": -124.771667
             }
         },
         {
@@ -41,8 +41,8 @@
             "timezone": "Mountain Time",
             "cardinal-extremity": "north",
             "coordinates": {
-                "latitude": "49.001111",
-                "longitude": "-114.388611"
+                "latitude": 49.001111,
+                "longitude": -114.388611
             }
         },
         {
@@ -50,8 +50,8 @@
             "timezone": "Mountain Time",
             "cardinal-extremity": "south",
             "coordinates": {
-                "latitude": "31.332167",
-                "longitude": "-108.756389"
+                "latitude": 31.332167,
+                "longitude": -108.756389
             }
         },
         {
@@ -59,8 +59,8 @@
             "timezone": "Mountain Time",
             "cardinal-extremity": "east",
             "coordinates": {
-                "latitude": "37.375",
-                "longitude": "-102.041667"
+                "latitude": 37.375,
+                "longitude": -102.041667
             }
         },
         {
@@ -68,8 +68,8 @@
             "timezone": "Mountain Time",
             "cardinal-extremity": "west",
             "coordinates": {
-                "latitude": "44.391111",
-                "longitude": "-117.243056"
+                "latitude": 44.391111,
+                "longitude": -117.243056
             }
         },
         {
@@ -77,8 +77,8 @@
             "timezone": "Central Time",
             "cardinal-extremity": "north",
             "coordinates": {
-                "latitude": "49.384444",
-                "longitude": "-95.153333"
+                "latitude": 49.384444,
+                "longitude": -95.153333
             }
         },
         {
@@ -86,8 +86,8 @@
             "timezone": "Central Time",
             "cardinal-extremity": "south",
             "coordinates": {
-                "latitude": "25.837222",
-                "longitude": "-97.394167"
+                "latitude": 25.837222,
+                "longitude": -97.394167
             }
         },
         {
@@ -95,8 +95,8 @@
             "timezone": "Central Time",
             "cardinal-extremity": "east",
             "coordinates": {
-                "latitude": "32.259722",
-                "longitude": "-84.889167"
+                "latitude": 32.259722,
+                "longitude": -84.889167
             }
         },
         {
@@ -104,8 +104,8 @@
             "timezone": "Central Time",
             "cardinal-extremity": "west",
             "coordinates": {
-                "latitude": "31.895556",
-                "longitude": "-106.645556"
+                "latitude": 31.895556,
+                "longitude": -106.645556
             }
         },
         {
@@ -113,8 +113,8 @@
             "timezone": "Eastern Time",
             "cardinal-extremity": "north",
             "coordinates": {
-                "latitude": "47.459722",
-                "longitude": "-69.224444"
+                "latitude": 47.459722,
+                "longitude": -69.224444
             }
         },
         {
@@ -122,8 +122,8 @@
             "timezone": "Eastern Time",
             "cardinal-extremity": "south",
             "coordinates": {
-                "latitude": "24.521111",
-                "longitude": "-81.963611"
+                "latitude": 24.521111,
+                "longitude": -81.963611
             }
         },
         {
@@ -131,8 +131,8 @@
             "timezone": "Eastern Time",
             "cardinal-extremity": "east",
             "coordinates": {
-                "latitude": "44.812222",
-                "longitude": "-66.945278"
+                "latitude": 44.812222,
+                "longitude": -66.945278
             }
         },
         {
@@ -140,8 +140,8 @@
             "timezone": "Eastern Time",
             "cardinal-extremity": "west",
             "coordinates": {
-                "latitude": "37.901667",
-                "longitude": "-88.097778"
+                "latitude": 37.901667,
+                "longitude": -88.097778
             }
         }
     ]
