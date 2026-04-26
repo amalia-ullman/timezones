@@ -5,7 +5,7 @@ map.on('click', async function (e) {
     let latlng = e.latlng;
     let popup = L.popup().setLatLng(latlng).setContent("Content copied: " + latlng).openOn(map);
     navigator.clipboard.writeText(e.latlng);
-    console.log(await GeoTZ.find(latlng['lat'], latlng['lng']));
+    let targetTZ = await GeoTZ.find(latlng['lat'], latlng['lng']);
 })
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
