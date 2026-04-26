@@ -1,6 +1,6 @@
 import { get_timezone_data } from './app.js';
 
-class Coordinate {
+export class Coordinate {
     constructor(latitude, longitude) {
         this.latitude = latitude;
         this.longitude = longitude;
@@ -39,7 +39,7 @@ function minutes_per_mile_conversion(timezone) {
     const data = get_timezone_data();
     const points = [];
     data.array.forEach(element => {
-        if (element.timezone == timezone) {
+        if (element.timezone.includes(timezone)) {
             if (element["cardinal-extremity"] == "east" || element["cardinal-extremity"] == "west") {
                 points.push(new Coordinate(element.coordinates.latitude, element.coordinates.longitude));
             }
@@ -59,10 +59,10 @@ function minutes_per_mile_conversion(timezone) {
 }
 
 // find true time
-function true_time(point, timezone) {
+export function true_time(point, timezone) {
     const data = get_timezone_data();
     data.array.forEach(element => {
-        if (element.timezone == timezone) {
+        if (element.timezone.includes(timezone)) {
             if (element["cardinal-extremity"] == "east") {
                 return longitude_dist_in_miles(new Coordinate(element.coordinates.latitude, element.coordinates.longitude), point) * minutes_per_mile_conversion(timezone);
             }
