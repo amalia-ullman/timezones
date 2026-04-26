@@ -1,22 +1,22 @@
 {
     "distances": [
         {
-            "timezone": "pacific",
+            "timezone": "['America/Los_Angeles']",
             "vertical (miles)": 1137.0685451875,
             "horizontal (miles)": 494.1
         },
         {
-            "timezone": "mountain",
+            "timezone": "['America/Denver']",
             "vertical (miles)": 1219.9861628525,
             "horizontal (miles)": 749.5
         },
         {
-            "timezone": "central",
+            "timezone": "['America/Chicago']",
             "vertical (miles)": 1625.8631536562,
             "horizontal (miles)": 1274
         },
         {
-            "timezone": "eastern",
+            "timezone": "['America/New_York']",
             "vertical (miles)": 1583.8404386281,
             "horizontal (miles)": 1150.7
         }
