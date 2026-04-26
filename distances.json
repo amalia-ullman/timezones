@@ -26,7 +26,9 @@
         {
             "timezone": [
                 "America/New_York",
-                "America/Detroit"
+                "America/Detroit",
+                "America/Indiana/Indianapolis",
+                "America/Indiana/Vincennes"
             ],
             "vertical (miles)": 1583.8404386281,
             "horizontal (miles)": 1150.7
