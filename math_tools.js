@@ -1,5 +1,3 @@
-import { get_timezone_data } from './app.js';
-
 export class Coordinate {
     constructor(latitude, longitude) {
         this.latitude = latitude;
@@ -7,8 +5,25 @@ export class Coordinate {
     }
 }
 
-const LONG_CONVERSION = 69.17
-const LAT_CONVERSION = 69;
+async function get_timezone_data() {
+    const environment = "production";
+    const base_url = (environment === "production") ? "/timezones" : "";
+
+    const request_url =
+        `${base_url}/data.json`;
+    const request = new Request(request_url);
+
+    const response = await fetch(request);
+    const location_data = await response.json();
+    const preEl = document.querySelector('#pre');
+    preEl.textContent = JSON.stringify(location_data);
+
+    console.log(location_data);
+    return location_data;
+
+    const LONG_CONVERSION = 69.17
+    const LAT_CONVERSION = 69;
+}
 
 // north-south distance
 function latitude_dist_in_miles(point1, point2) {
