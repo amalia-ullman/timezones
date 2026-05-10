@@ -1,3 +1,6 @@
+const LONG_CONVERSION = 69.17
+const LAT_CONVERSION = 69;
+
 export class Coordinate {
     constructor(latitude, longitude) {
         this.latitude = latitude;
@@ -6,7 +9,7 @@ export class Coordinate {
 }
 
 async function get_timezone_data() {
-    const environment = "production";
+    const environment = "development";
     const base_url = (environment === "production") ? "/timezones" : "";
 
     const request_url =
@@ -53,7 +56,7 @@ function longitude_dist_in_miles(point1, point2) {
 function minutes_per_mile_conversion(timezone) {
     const data = get_timezone_data();
     const points = [];
-    data.array.forEach(element => {
+    data.array.forEach((element) => function () {
         if (element.timezone.includes(timezone)) {
             if (element["cardinal-extremity"] == "east" || element["cardinal-extremity"] == "west") {
                 points.push(new Coordinate(element.coordinates.latitude, element.coordinates.longitude));
@@ -74,17 +77,26 @@ function minutes_per_mile_conversion(timezone) {
 }
 
 // find true time
-export function true_time(point, timezone) {
-    const data = get_timezone_data();
-    // todo: migrate to better pastures
-    data.array.forEach(element => {
-        if (element.timezone.includes(timezone)) {
+export async function true_time(point, timezone) {
+    /**
+     * @params
+     * POINT - coordinate(lat, long) after clicking map
+     * TIMEZONE - array e.g. ['America/New York']
+     * using east extremity so that the product of the distance between the point and extremity and the minute-per-mile conversion can be added instead of subtracted from the timezone time
+     */
+
+    const data = await get_timezone_data();
+
+    data.locations.forEach((element) => {
+        if (element.timezone.includes(timezone[0])) {
             if (element["cardinal-extremity"] == "east") {
-                return longitude_dist_in_miles(new Coordinate(element.coordinates.latitude, element.coordinates.longitude), point) * minutes_per_mile_conversion(timezone);
+                console.log(element['cardinal-extremity']);
+                //console.log(longitude_dist_in_miles(new Coordinate(element.coordinates.latitude, element.coordinates.longitude)), point);
             }
         }
     });
 }
+
 
 // must add columbus coordinates
 // console.log(true_time(new Coordinate()), "Eastern Time");
