@@ -1,5 +1,5 @@
 export async function get_timezone_data() {
-    const environment = "development";
+    const environment = "production";
     const base_url = (environment === "production") ? "/timezones" : "";
 
     const request_url =
