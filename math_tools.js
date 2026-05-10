@@ -60,7 +60,7 @@ function minutes_per_mile_conversion(timezone) {
 
 // find true time
 export function true_time(point, timezone) {
-    const data = await get_timezone_data();
+    const data = get_timezone_data();
     // todo: migrate to better pastures
     data.array.forEach(element => {
         if (element.timezone.includes(timezone)) {
