@@ -18,8 +18,6 @@ async function get_timezone_data() {
 
     const response = await fetch(request);
     const location_data = await response.json();
-    const preEl = document.querySelector('#pre');
-    preEl.textContent = JSON.stringify(location_data);
 
     console.log(location_data);
     return location_data;
