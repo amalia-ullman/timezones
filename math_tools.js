@@ -38,11 +38,11 @@ function latitude_dist_in_miles(point1, point2) {
 function longitude_dist_in_miles(point1, point2) {
     // distance per degree changes at each longitude
     // this finds the degree to mile conversion for each longitude
-    point1_dist_per_degree = Math.cos(point1.latitude * Math.PI / 180) * LONG_CONVERSION;
-    point2_dist_per_degree = Math.cos(point2.latitude * Math.PI / 180) * LONG_CONVERSION;
+    const point1_dist_per_degree = Math.cos(point1.latitude * Math.PI / 180) * LONG_CONVERSION;
+    const point2_dist_per_degree = Math.cos(point2.latitude * Math.PI / 180) * LONG_CONVERSION;
 
     // averages the degree to mile conversion
-    avg_dist_per_degree = (point1_dist_per_degree + point2_dist_per_degree) / 2;
+    const avg_dist_per_degree = (point1_dist_per_degree + point2_dist_per_degree) / 2;
 
     // cos(83) deg mode -> 0.2495
     // cos(83 * pi /180) -> 0.999
@@ -53,29 +53,34 @@ function longitude_dist_in_miles(point1, point2) {
 
 
 // find degree to mile conversion for each timezone for one step
-function minutes_per_mile_conversion(timezone) {
-    const data = get_timezone_data();
-    const points = [];
-    data.array.forEach((element) => function () {
-        if (element.timezone.includes(timezone)) {
+async function minutes_per_mile_conversion(timezone) {
+    const data = await get_timezone_data();
+    let points = [];
+    data.locations.forEach((element) => {
+        if (element.timezone.includes(timezone[0])) {
             if (element["cardinal-extremity"] == "east" || element["cardinal-extremity"] == "west") {
                 points.push(new Coordinate(element.coordinates.latitude, element.coordinates.longitude));
             }
         }
     });
 
-    point1_dist_per_degree = Math.cos(points[0].latitude * Math.PI / 180) * LONG_CONVERSION;
-    point2_dist_per_degree = Math.cos(points[1].latitude * Math.PI / 180) * LONG_CONVERSION;
+    const point1_dist_per_degree = Math.cos(points[0].latitude * Math.PI / 180) * LONG_CONVERSION;
+    const point2_dist_per_degree = Math.cos(points[1].latitude * Math.PI / 180) * LONG_CONVERSION;
 
-    avg_dist_per_degree = (point1_dist_per_degree + point2_dist_per_degree) / 2;
+    const avg_dist_per_degree = (point1_dist_per_degree + point2_dist_per_degree) / 2;
 
     // find distance between extremities in miles
-    distance = Math.abs(points[0].longitude - points[1].longitude) * avg_dist_per_degree;
-
+    let distance = (Math.abs(points[0].longitude - points[1].longitude) * avg_dist_per_degree);
     // divide distance by 60
     return distance / 60;
 }
 
+console.log(minutes_per_mile_conversion([
+    "America/New_York",
+    "America/Detroit",
+    "America/Indiana/Indianapolis",
+    "America/Indiana/Vincennes"
+]));
 // find true time
 export async function true_time(point, timezone) {
     /**
@@ -90,8 +95,9 @@ export async function true_time(point, timezone) {
     data.locations.forEach((element) => {
         if (element.timezone.includes(timezone[0])) {
             if (element["cardinal-extremity"] == "east") {
-                console.log(element['cardinal-extremity']);
-                //console.log(longitude_dist_in_miles(new Coordinate(element.coordinates.latitude, element.coordinates.longitude)), point);
+                const point2 = new Coordinate(element.coordinates.latitude, element.coordinates.longitude);
+                console.log(minutes_per_mile_conversion(timezone));
+                // * longitude_dist_in_miles(point, point2)
             }
         }
     });
