@@ -138,7 +138,8 @@ export async function true_time(point, timezone) {
         }
     });
 
-    console.log(conversion * longitude_dist_in_miles(point, point2));
+    //console.log(conversion * longitude_dist_in_miles(point, point2));
+    return conversion * longitude_dist_in_miles(point, point2);
 }
 
 
