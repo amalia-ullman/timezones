@@ -42,8 +42,14 @@
 
     <!-- Add your site or application content here -->
     <h1>Timezones Scaled Against Distance</h1>
-    <h3>look! we have a map! look again! we have some json objects! this site is under construction, but one day you
-        will find the theoretical "true" time of different points based on the distance covered in each timezone.</h3>
+    <p>
+        Since time changes based on location (commonly referred to as 'timezones'), this project explores what would
+        happen if the change in time based on location was constant, meaning each location has a unique 'true time'.
+        With a step of 1, the eastern and western extremities of each US timezone are used to determine the minutes per
+        mile conversion, as one hour passes between the longitudinal component of the distance between these points.
+        Clicking on a location uses this minutes per mile conversion to determine the amount of minutes one should add
+        to the time at that location to find the true time.
+    </p>
     <div style="margin-block: 2rem;">
         <label for="steps">Steps</label>
         <div style="display: flex; gap: 1rem">
@@ -59,8 +65,13 @@
         </script>
     </div>
     <div id="map"></div>
+    <footer style="margin-top: 4rem">
+        <a href="https://github.com/amalia-ullman/timezones">Github Repo</a>
+    </footer>
+
     <script type="module" src="math_tools.js"></script>
     <script type="module" src="ui.js"></script>
+
 </body>
 
 </html>
